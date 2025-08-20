@@ -14,7 +14,7 @@ To address this, the hospital management decided to leverage Business & Data Int
 **1. Load data into Power BI:**
 Open Power BI - Get Data - Link Folder which contains csv files - convert binary to tables
 
-**Data Transformation:**
+**2. Data Transformation:**
 1. Generate a new table called date for extracting Year, Month, WeekType, Weekday, MonthNum for time-series analysis and also created AM/PM flag to analyze visits by shift.
 - Dax formula:
 Date = 
@@ -44,5 +44,9 @@ Age Group =
           )
      )
  )
+
+**3. Manage Relationship:**
+<img width="1096" height="625" alt="image" src="https://github.com/user-attachments/assets/25a78b3b-a1db-4f7c-aae4-e2fe2d2ff3e9" />
+
 
 
