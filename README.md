@@ -199,7 +199,7 @@ KPIs
 Visuals
 1. Time Trend Charts (e.g., Total Visit by Year, Total Patients Visits by Month)
 2. Bar or Column Charts (E.G., Visits by department, Total Patients by Age Group, Total visit by WeekType)
-3. Donuts or Pie Charts (gender or referral source distribution)
+3. Charts (gender Breakdown)
 4. Heatmaps or Matrix (e.g., wait time by age group and race) 
 
 Slicers (Filters)
