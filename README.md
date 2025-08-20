@@ -51,6 +51,7 @@ Create a schema relationship between tables
 
 **4. Create Measures:**
 1. **% Administrative Schedule** = DIVIDE(COUNTROWS(FILTER('Patient Dataset', 'Patient Dataset'[patient_admin_flag]=TRUE())), [Total Patients])
+
 2. **% Female Visit** = 
 DIVIDE(
     CALCULATE(
@@ -59,6 +60,7 @@ DIVIDE(
     ),
     [Total Patients]
 )
+
 3. **% Male Visit** = 
 DIVIDE(
     CALCULATE(
@@ -67,8 +69,11 @@ DIVIDE(
     ),
     [Total Patients]
 )
+
 4. **% No Ratings** = VAR _NoRatings = CALCULATE([Total Patients], 'Patient Dataset'[patient_sat_score]=BLANK()) RETURN(DIVIDE(_NoRatings, [Total Patients]))
+
 5. **% None - Administrative Schedule** = DIVIDE(COUNTROWS(FILTER('Patient Dataset', 'Patient Dataset'[patient_admin_flag]=FALSE())), [Total Patients])
+
 6. **% Refrred Patients** = 
 VAR _FilterPatients = 
 CALCULATE(
@@ -77,6 +82,7 @@ CALCULATE(
     RETURN
     DIVIDE(_FilterPatients,
     [Total Patients])
+
 7. **% Un Refrred Patients** = 
 VAR _FilterPatients = 
 CALCULATE(
@@ -85,6 +91,7 @@ CALCULATE(
     RETURN
     DIVIDE(_FilterPatients,
     [Total Patients])
+
 8. **% Unknown Visit** = 
 DIVIDE(
     CALCULATE(
@@ -93,8 +100,11 @@ DIVIDE(
     ),
     [Total Patients]
 )
+
 9. **Average Satisfaction Score** = AVERAGE('Patient Dataset'[patient_sat_score])
+
 10. **Average wait time** = AVERAGE('Patient Dataset'[patient_waittime])
+
 11. **CF Max Point (Month)** = 
     VAR _PatientTable = 
     CALCULATETABLE(
@@ -112,6 +122,7 @@ DIVIDE(
         TRUE(),
         _TotalPatients = _MinValu, 0 ,
         _TotalPatients =  _MaxValu,1)
+
 12. **CF Max Point (Year)** = 
     VAR _PatientTable = 
     CALCULATETABLE(
@@ -129,6 +140,7 @@ DIVIDE(
         TRUE(),
         _TotalPatients = _MinValu, 0 ,
         _TotalPatients =  _MaxValu,1)
+
 13. **HitMap Caption** = 
 VAR _SelectedMeasure =
 SELECTEDVALUE(Parameter[Parameter Order])
@@ -136,7 +148,9 @@ RETURN
 IF(_SelectedMeasure = 0, 
 "The darkest GREEN on the SCALE denotes LOW Waiting TIME ON THE Age-Group",
 "Patients are most SATISFIED when the SCALE shows the darkest GREEN on the Age-Group")
+
 14. **Total Patients** = COUNTROWS('Patient Dataset')
+
 15. **Values Max Point (Month)** = 
     VAR _PatientTable = 
     CALCULATETABLE(
@@ -154,6 +168,7 @@ IF(_SelectedMeasure = 0,
         TRUE(),
         _TotalPatients = _MinValu, [Total Patients] ,
         _TotalPatients =  _MaxValu,[Total Patients])
+
 16. **Values Max Point (YEAR)** = 
     VAR _PatientTable = 
     CALCULATETABLE(
