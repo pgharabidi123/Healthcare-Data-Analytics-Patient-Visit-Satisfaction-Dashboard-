@@ -187,5 +187,26 @@ IF(_SelectedMeasure = 0,
         _TotalPatients = _MinValu, [Total Patients] ,
         _TotalPatients =  _MaxValu,[Total Patients])
 
+**5. Create Dashboard:**
+<img width="2767" height="1600" alt="Report" src="https://github.com/user-attachments/assets/20ef739f-0d0a-4cf9-a68a-2a5597cd81e8" />
+
+KPIs
+Total Patient Visits (overall volume)
+Avg. Wait Time (operational efficiency)
+Avg. Satisfaction Score (patient experience)
+Service Not Rated (resource management)
+
+Visuals
+Time Trend Charts (e.g., Total Visit by Year, Total Patients Visits by Month)
+Bar or Column Charts (E.G., Visits by department, Total Patients by Age Group, Total visit by WeekType)
+Donuts or Pie Charts (gender or referral source distribution)
+Heatmaps or Matrix (e.g., wait time by age group and race) 
+
+Slicers (Filters)
+Time-based Filters: Year, Month, Week Number
+Shift or Period: AM/PM
+Department: Select specific departments or referral sources
+Appointment Type: Administrative vs Non-Administrative
+Demographics: Age group, Gender, Race
 
 
