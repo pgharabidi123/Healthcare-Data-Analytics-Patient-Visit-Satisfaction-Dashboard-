@@ -191,22 +191,22 @@ IF(_SelectedMeasure = 0,
 <img width="2767" height="1600" alt="Report" src="https://github.com/user-attachments/assets/20ef739f-0d0a-4cf9-a68a-2a5597cd81e8" />
 
 KPIs
-Total Patient Visits (overall volume)
-Avg. Wait Time (operational efficiency)
-Avg. Satisfaction Score (patient experience)
-Service Not Rated (resource management)
+1. Total Patient Visits (overall volume)
+2. Avg. Wait Time (operational efficiency)
+3. Avg. Satisfaction Score (patient experience)
+4. Service Not Rated (resource management)
 
 Visuals
-Time Trend Charts (e.g., Total Visit by Year, Total Patients Visits by Month)
-Bar or Column Charts (E.G., Visits by department, Total Patients by Age Group, Total visit by WeekType)
-Donuts or Pie Charts (gender or referral source distribution)
-Heatmaps or Matrix (e.g., wait time by age group and race) 
+1. Time Trend Charts (e.g., Total Visit by Year, Total Patients Visits by Month)
+2. Bar or Column Charts (E.G., Visits by department, Total Patients by Age Group, Total visit by WeekType)
+3. Donuts or Pie Charts (gender or referral source distribution)
+4. Heatmaps or Matrix (e.g., wait time by age group and race) 
 
 Slicers (Filters)
-Time-based Filters: Year, Month, Week Number
-Shift or Period: AM/PM
-Department: Select specific departments or referral sources
-Appointment Type: Administrative vs Non-Administrative
-Demographics: Age group, Gender, Race
+1. Time-based Filters: Year, Month, Week Number
+2. Shift or Period: AM/PM
+3. Department: Select specific departments or referral sources
+4. Appointment Type: Administrative vs Non-Administrative
+5. Demographics: Age group, Gender, Race
 
 
